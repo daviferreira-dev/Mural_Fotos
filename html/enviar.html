@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Envia</title>
+    <link rel="icon"
+        href="https://img.freepik.com/vetores-premium/emoji-de-cara-de-nerd-emoticon-inteligente-com-oculos-geek-ou-estudante_3482-1193.jpg?w=360"
+        type="image/x-icon" />
+    <link rel="stylesheet" href="../estilo/enviar.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Envie sua foto para o Mural!</h1>
+    </header>
+    <main>
+        <div class="principal enviar-enter">
+            <div class="envia">
+                <div class="esquerda" onclick="comecarCamera()">
+                    <img src="https://cdn0.iconfinder.com/data/icons/evericons-24px-vol-1/24/camera-create-512.png"
+                        alt="Camera" />
+                </div>
+                <div class="direita" onclick="document.getElementById('fileInput').click()">
+                    <img src="https://cdn1.iconfinder.com/data/icons/general-ui-outlined-thick/24/download-512.png"
+                        alt="Upload" />
+                </div>
+                <input type="file" accept="image/*" id="fileInput" style="display:none" />
+                <div class="video-container" id="videoContainer" style="display:none;">
+                    <video id="video" autoplay></video>
+                    <button id="captureButton" onclick="capturePhoto()">Tirar Foto</button>
+                </div>
+                <canvas id="canvas" style="display:none;"></canvas>
+                <img id="capturedImage" style="display:none; max-width: 100%; margin-top: 20px;"
+                    alt="Imagem Capturada" />
+            </div>
+        </div>
+    </main>
+    <script src="../script/enviar.js"></script>
+</body>
+
+</html>

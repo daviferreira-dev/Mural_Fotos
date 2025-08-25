@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://img.freepik.com/vetores-premium/emoji-de-cara-de-nerd-emoticon-inteligente-com-oculos-geek-ou-estudante_3482-1193.jpg?w=360" type="image/x-icon">
+    <title>Mural de Fotos Interativo</title>
+    <link rel="stylesheet" href="../estilo/home.css">
+</head>
+
+<body>
+    <main id="map-container" class="map-background">
+        <div id="map-overlay"></div>
+        
+        <section id="card-container">
+            <div id="welcome-card" class="card card-enter">
+                <header>
+                    <h1>
+                        Mural de Fotos <img src="/assets/camera-icon.png" alt="Ícone de Câmera" class="icon">
+                    </h1>
+                </header>
+                <p>
+                    Um mural de fotos com localização interativa! <span>📍</span>
+                </p>
+                <div class="button-container">
+                    <a href="mural.html" class="btn btn-primary" role="button">
+                        Ver Mural
+                    </a>
+                    <a href="enviar.html" id="upload-btn" class="btn btn-secondary" role="button">
+                        Upload
+                        <img src="/assets/upload.png" alt="Ícone de Upload" class="icon-upload">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div id="pins-container"></div>
+        <div id="message-box" class="hidden" aria-live="polite">
+            Foto adicionada com sucesso!
+        </div>
+    </main>
+    </body>
+</html>
